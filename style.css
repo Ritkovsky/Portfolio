@@ -1,0 +1,302 @@
+*
+{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
+}
+.styled-scrollbars 
+  {
+    /* Foreground, Background */
+    scrollbar-color: rgb(17, 17, 17) #333;
+  }
+  .styled-scrollbars::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 15px; /* Mostly for horizontal scrollbars */
+  }
+  .styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+    background: rgb(17, 17, 17);
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+  .styled-scrollbars::-webkit-scrollbar-track { /* Background */
+    background: #333;
+    padding: 2px;
+  }
+.underline
+{
+    text-decoration: underline dashed;
+}
+.nav
+{
+    width: 100%;
+    height: 100px;
+    top: 0;
+    z-index: 3;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 100px;
+}
+.nav a
+{
+    text-decoration: underline dashed;
+    color: black;
+}
+.navText
+{
+    font-size: 25px;
+    text-align: center;
+    transition: 1s;
+}
+.navText:hover
+{
+    font-size: 26px;
+    transition: 1s;
+}
+.hero
+{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(190, 190, 190);
+}
+.hero::before
+{
+    content: '';
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+.heroLeft
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    float: left; 
+}
+.heroRight
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.heroText
+{
+    margin-left: 40%;
+    height: 331px;
+    width: 600px;
+    font-size: 45px;
+    text-align: left;
+    color: rgb(10, 10, 10);
+    text-shadow: 3px 3px 3px rgb(100, 100, 100);
+    cursor:default;
+}
+.smallText
+{
+    color: rgb(50, 50, 50);
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.heroButton
+{
+   
+    width: 220px;
+    height: 60px;
+    font-size: 25px;
+    border: 2px dashed black;
+    cursor: pointer;
+    transition: 1s;
+}
+.heroButton:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+    transition: 1s;
+}
+.selfie
+{
+    width: 300px;
+    background-color: white;
+    border: 3px dashed rgb(17, 17, 17);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s;
+}
+.selfie:hover
+{
+    transition: 0.5s;
+    width: 320px;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    height: 880px;
+    background-color: rgb(210, 210, 210);
+}
+.content h1
+{
+    position: relative;
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgb(100, 100, 100);
+    cursor:default;
+}
+    
+.contentText
+{
+    width: 40%;
+    height: fit-content;
+    margin-top: 120px;
+    margin-left: 10%;
+    padding: 35px;
+    border: 2px dashed black;
+    text-align: justify;
+    float: left;
+    font-size: 1.4rem;
+    background-color: white;
+    transition: 1.25s;
+}
+.contentText:hover
+{
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 1.25s;
+}
+.skills,.skills2,.skills3
+{
+    width: 40%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 120px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.box
+{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.75s;
+}
+.box img:hover
+{
+    width: 105px;
+    transition: 0.75s;
+}
+.box img
+{
+    width: 100px;
+    transition: 0.75s;
+}
+.projects
+{
+    position: relative;
+    width: 100%;
+    height: 1150px;
+    background-color: rgb(190, 190, 190);;
+}
+.projects::before
+{
+    content: '';
+    background-image: url(./Images/backgroundmirror.jpg);
+    background-size: cover;
+    background-position: -300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+.projects p
+{
+    position: relative;
+    padding-top: 125px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgb(100, 100, 100);
+}
+.projectbox
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 75px;
+    gap: 75px;
+}
+.project
+{
+    position: relative;
+    width: 35%;
+    height: 350px;
+    background-color: white;
+    border: 2px dashed black;
+    padding: 25px;
+    transition: 1.25s;
+}
+.project img
+{
+    width: 100%;
+    height: 100%;
+}
+.projectButton
+{
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px dashed black;
+    transition: 1.25s;
+    cursor: pointer;
+}
+.projectButton:hover
+{
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 1.25s;
+}
+.socials
+{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(210, 210, 210);
+}
+.socials h1
+{
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgb(100, 100, 100);
+    cursor:default;
+}
